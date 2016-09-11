@@ -1,0 +1,16 @@
+$(".more").click(function(){
+	$(".hidden").toggle();
+});
+$(".gotop").click(function(){
+	window.scroll(0,0);
+});
+$(".today-btn").click(function(){
+	$(".today").css("display","block")
+	$(".today-inner").css("display","block");
+	$(".today-btn").css("display","none");
+});
+$(".close").click(function(){
+	$(".today-inner").css("display","none")
+	$(".today-btn").css("display","block");
+	$(".today").css("display","none")
+});
